@@ -1,6 +1,6 @@
 ##Setup LLVM, MLIR, LDC
 
-### Getting MLIR
+### Getting MLIR eith Clang
 ```
 git clone https://github.com/llvm/llvm-project.git
 git clone https://github.com/tensorflow/mlir llvm-project/llvm/projects/mlir
@@ -8,21 +8,6 @@ mkdir llvm-project/build && cd llvm-project/build
 cmake -G Ninja ../llvm -DLLVM_ENABLE_PROJECTS="clang" -DLLVM_BUILD_EXAMPLES=ON -DLLVM_TARGETS_TO_BUILD="host"
 cmake --build . --target check-mlir
 ```
-
-###Getting Clang
-```
-cd ../
-cp -r clang ./llvm/projects/
-```
-
-### Building LLVM Binaries
-```
-cd ../llvm
-mkdir build && cd build
-cmake -G Ninja ../llvm DLLVM_ENABLE_PROJECTS=clang
-make -j8
-```
-
 ###Getting LDC
 Using a patch for compile LDC to LLVM 10
 ```
