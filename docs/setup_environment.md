@@ -1,4 +1,4 @@
-##Setup LLVM, MLIR, LDC
+## Setup LLVM, MLIR, LDC
 
 ### Getting MLIR eith Clang
 ```
@@ -8,7 +8,7 @@ mkdir llvm-project/build && cd llvm-project/build
 cmake -G Ninja ../llvm -DLLVM_ENABLE_PROJECTS="clang" -DLLVM_BUILD_EXAMPLES=ON -DLLVM_TARGETS_TO_BUILD="host"
 cmake --build . --target check-mlir
 ```
-###Getting LDC
+### Getting LDC
 Using a patch for compile LDC to LLVM 10
 ```
 git clone cmake https://github.com/thewilsonator/ldc.git
