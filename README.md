@@ -10,7 +10,20 @@ The goal of this project is to provide LDC with a new level of abstraction to su
 
 ## Millestones
 
-1. Compilation of D through the LLVM dialect of MLIR. 
-2. A D dialect (for GC2Stack & others optmizations) and exposure and utilisation of other dialects (Affine, vector, etc.)
-3.
-4.
+1. Compilation of D through the LLVM dialect of MLIR:
+ - Build and set up as the newest version available: LLVM(10.0.0svn), MLIR, LDC(1.17.0) and DMD(v2.087.1).
+ - Systematic review about D, LDC and MLIR source code.
+ - Model all core IR structures in LLVM: Instructions, Globals, Modules, etc.
+ - Transverse the AST of D to emit MLIR code.
+ - Run tests, fix bugs, write documentation.
+2. Build the D dialect:
+ - Implement D types as D Dialect types.
+ - Implement D operations as D Dialect operations.
+ - Refine D Dialect to support D specific constraints.
+ - Run tests, fix bugs, write documentation.
+3. Implement D speficic optmizations and Use/Test the translation to other dialects:
+ - Implement GC2Stack and simpler D optimizations.
+ - Translate D Dialect into Affine, Vector, GPU, etc.
+ - Run tests, fix bugs, write documentation.
+ - Run some benchmarks to compare the performance of D and D+MLIR optimizations.
+4. Use D (compiled into MLIR) ML Frameworks and anaylze the perfomance.
