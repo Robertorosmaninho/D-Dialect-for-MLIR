@@ -14,7 +14,7 @@ The goal of this project is to provide LDC with a new level of abstraction to su
  - Build and set up as the newest version available: LLVM(10.0.0svn), MLIR, LDC(1.17.0) and DMD(v2.087.1).
  - Systematic review about D, LDC and MLIR source code.
  - Model all core IR structures in LLVM: Instructions, Globals, Modules, etc.
- - Transverse the AST of D to emit MLIR code.
+ - Traverse the AST of D to emit MLIR code.
  - Run tests, fix bugs, write documentation.
 2. Build the D dialect:
  - Implement D types as D Dialect types.
@@ -26,4 +26,4 @@ The goal of this project is to provide LDC with a new level of abstraction to su
  - Translate D Dialect into Affine, Vector, GPU, etc.
  - Run tests, fix bugs, write documentation.
  - Run some benchmarks to compare the performance of D and D+MLIR optimizations.
-4. Use D (compiled into MLIR) ML Frameworks and anaylze the perfomance.
+4. Use D (compiled into MLIR) on ML Frameworks and analyze perfomance.
