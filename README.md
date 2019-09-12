@@ -17,11 +17,12 @@ The goal of this project is to provide LDC with a new level of abstraction to su
  - Traverse the AST of D to emit MLIR code.
  - Run tests, fix bugs, write documentation.
 2. Build the D dialect:
- - Implement D types as D Dialect types.
+ - Implement D operations as D Dialect operations.
  - Implement D operations as D Dialect operations.
  - Refine D Dialect to support D specific constraints.
  - Run tests, fix bugs, write documentation.
 3. Implement D speficic optmizations and Use/Test the translation to other dialects:
+ - Expose intructions and operations to D.
  - Implement GC2Stack and simpler D optimizations.
  - Translate D Dialect into Affine, Vector, GPU, etc.
  - Run tests, fix bugs, write documentation.
