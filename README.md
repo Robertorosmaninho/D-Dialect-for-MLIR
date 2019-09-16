@@ -18,7 +18,7 @@ The goal of this project is to provide LDC with a new level of abstraction to su
  - Run tests, fix bugs, write documentation.
 2. Build the D dialect:
  - Implement D operations as D Dialect operations.
- - Implement D operations as D Dialect operations.
+ - Register D dialect as MLIR Dialect
  - Refine D Dialect to support D specific constraints.
  - Run tests, fix bugs, write documentation.
 3. Implement D speficic optmizations and Use/Test the translation to other dialects:
