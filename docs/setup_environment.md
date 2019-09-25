@@ -1,6 +1,6 @@
 ## Setup LLVM, MLIR, LDC
 
-### Getting MLIR eith Clang
+### Getting MLIR with Clang
 ```
 git clone https://github.com/llvm/llvm-project.git
 git clone https://github.com/tensorflow/mlir llvm-project/llvm/projects/mlir
@@ -12,6 +12,12 @@ cmake --build . --target check-mlir [-- -j #cores]
 ### Getting LDC
 Using a patch for compile LDC to LLVM 10
 ```
-git clone cmake https://github.com/thewilsonator/ldc.git
-
+git clone https://github.com/Robertorosmaninho/ldc.git
+cd ldc
+git checkout fix-llvm-10
+export DMD=/path/to/your/dmd2/bin/dmd
+mkdir build && cd build
+cmake -G Ninja -DLLVM_CONFIG=/path/to/llvm/build/bin/llvm-config ..
+ninja
+sudo ninja install
 ```
